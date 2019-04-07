@@ -1,0 +1,43 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<title>Testing Git Pages</title>
+		<script src="js/snake-js.js"></script>
+		<script type="text/javascript">
+			document.addEventListener("DOMContentLoaded", function(){
+			var parentElement = document.getElementById("parent");
+			var settings = {
+					frameInterval : 120,
+					backgroundColor : "#f3e698"
+			};
+	
+			var game = new SnakeJS(parentElement, settings);
+		}, true);
+		</script>
+
+	</head>
+	<body onload="init();">
+	
+		<h1>Big Titles</h1>
+		<h2>Not as Big</h2>
+		<p>Features</p>
+		<ol>
+			<li>Product1</li>
+			<ul>
+				<li>Feature 1</li>
+				<li>Feature 2</li>
+			</ul>
+			<li>Product2</li>
+		</ol>
+		
+		<canvas id="playground" width="500" height="200"></canvas>
+		<script src="js/game.js"></script>
+		
+		
+		<div id="parent"></div>
+		<p>
+		<strong>Use the arrow keys to control the snake.</strong>
+		</p>
+	
+	</body>
+</html>
